@@ -30,15 +30,15 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body
-        className={`${iranSans.variable} ${iranSansnumber.variable} min-h-screen flex flex-col`}
+        className={`${iranSans.variable} ${iranSansnumber.variable}`}
       >
         <Providers>
           {/* هدر همیشه بالا */}
           <Header />
 
           {/* محتوا: وسط اگر کوتاه باشه، اسکرول اگر بلند باشه */}
-          <main className="flex-grow flex flex-col justify-center">
-            <div className="my-auto">{children}</div>
+          <main className="">
+            <div className="">{children}</div>
           </main>
 
           {/* فوتر همیشه پایین */}
