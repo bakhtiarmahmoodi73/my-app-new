@@ -1,10 +1,8 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    // "./src/**/*.{js,ts,jsx,tsx,mdx}", // اگر پوشه src استفاده می‌کنی
   ],
   theme: {
     extend: {
@@ -14,18 +12,15 @@ const config: Config = {
         navbar: "#F8F9FA",
       },
       fontFamily: {
-        iranSans: "--font-iran-sans",
-        iranSansnumber: "--font-number-sans",
+        iranSans: ["var(--font-iran-sans)"],
+        iranSansnumber: ["var(--font-number-sans)"],
       },
       screens: {
-        'mobile': '0px',
-  
-        'tablet': '376px',
-  
-        'laptop': '835px',
+        mobile: "0px",
+        tablet: "376px",
+        laptop: "835px",
       },
     },
   },
   plugins: [],
 };
-export default config;
