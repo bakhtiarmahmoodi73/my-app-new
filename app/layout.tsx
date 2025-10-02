@@ -33,15 +33,15 @@ export default function RootLayout({
         className={`${iranSans.variable} ${iranSansnumber.variable}`}
       >
         <Providers>
-          {/* هدر همیشه بالا */}
+         
           <Header />
 
-          {/* محتوا: وسط اگر کوتاه باشه، اسکرول اگر بلند باشه */}
+          
           <main className="">
             <div className="">{children}</div>
           </main>
 
-          {/* فوتر همیشه پایین */}
+         
           <Footer />
         </Providers>
       </body>
