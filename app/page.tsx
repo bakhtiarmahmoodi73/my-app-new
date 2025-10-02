@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CoinTable from "@/Components/coinTable";
+import CoinTable from "@/components/coinTable";
 
 export default function Home() {
   return (
